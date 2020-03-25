@@ -1,0 +1,46 @@
+/**
+ * Rota 'caminho completo'/ Recursos ('/', '/algumacoisa)
+ */
+
+/**
+  * Metodos HTTP
+  * 
+  * GET: Listar/Buscar uma informação.
+  * POST: Criar uma informação.
+  * PUT: Alterar uma informação.
+  * DELETE: Deletar uma informação. 
+  */
+
+/**
+  * Tipos de parâmetros:
+  * 
+  * Query Params: Parâmetros nomeados enviados na rota após o "?" (Filtros, paginação) = http://localhost:3333/users?key=value&Key=value;
+  * Route Params: Parâmetros utilizados para identificar recursos = http://localhost:3333/users/:id
+  * Request Body: Corpo da requisição, utilizado para criar ou atualizad dados.
+  */
+
+/**
+ *  Como fazer as consultas
+ *  DRIVER: SELECT * FROM users
+ *  Query Builder: table('users').selec('*').where()
+ */
+
+
+npm install nodemon -D
+para instalar o nodemon com o parametro '-D' serve para usar somente com desenvolvimento, pois não é necessário no modo de produção.
+proceder atualizando o 'package.json' deixando o objeto scripts assim:
+
+ "scripts": {
+=>    "start": "nodemon index.js"
+  },
+
+para usar banco de dados pode utiliando queqy builder(Knex) só executar?
+  npm install knex
+para incializar o banco de dados
+  npx knex init
+para usar sqlite só instalar o driver dele
+  npm install sqlite3
+
+knex.org
+ver migrations que servem como controle de versão;
+  npx knex migrate: make create_ongs
