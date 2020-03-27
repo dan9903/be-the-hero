@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+../backend/src/database/db.sqlite
 /.pnp
 .pnp.js
 
