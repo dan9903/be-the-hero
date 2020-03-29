@@ -16,7 +16,7 @@
   * 
   * Query Params: Parâmetros nomeados enviados na rota após o "?" (Filtros, paginação) = http://localhost:3333/users?key=value&Key=value;
   * Route Params: Parâmetros utilizados para identificar recursos = http://localhost:3333/users/:id
-  * Request Body: Corpo da requisição, utilizado para criar ou atualizad dados.
+  * Request Body: Corpo da requisição, utilizado para criar ou atualizar dados.
   */
 
 /**

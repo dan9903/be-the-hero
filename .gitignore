@@ -1,3 +1,5 @@
 backend/node_modules
 backend/src/database/db.sqlite
 assets-app-mobile
+backend/src/database/test.sqlite
+backend/src/database/db.sqlite

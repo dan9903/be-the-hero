@@ -1,7 +1,6 @@
-const crypto =  require('crypto');
 //database connection
 const connection = require('../database/connection');
-
+const generateUniqueId = require('../utils/generateUniqueId');
 //o async torna a função assincrona fazendo com que ela finalize somente quando executou o await no caso a função de insert;
 module.exports = {
     async index (request, response) {
@@ -11,9 +10,10 @@ module.exports = {
 
     async create(request, response) {
         const {name, email, whatsapp, city, uf } = request.body;
-        const id = crypto.randomBytes(4).toString('HEX');
+        const id = generateUniqueId();
         
         await connection('ongs').insert({ id, name, email,whatsapp, city, uf });
+        
         return response.json({ id });
     }
 }
