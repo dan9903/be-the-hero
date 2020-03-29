@@ -17,7 +17,19 @@ export default StyleSheet.create({
         borderRadius: 8,
         backgroundColor: '#FFF',
         marginBottom: 16,
-        marginTop: 48
+        marginTop: 10
+    },
+    incidentHead: {
+        marginTop: 12,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    incidentONGInfo: {
+        marginTop:0,
+        fontSize: 14,
+        color: '#41414d',
+        fontWeight: 'bold'
     },
     incidentProperty: {
         fontSize: 14,
@@ -28,7 +40,9 @@ export default StyleSheet.create({
     incidentValue: {
         marginTop: 8,
         fontSize: 15,
-        color: '#737380'
+        color: '#737380',
+        textAlign: 'justify',
+        flexDirection: 'row'
     },
     contactBox: {
         padding: 24,
